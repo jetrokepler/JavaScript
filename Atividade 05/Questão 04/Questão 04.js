@@ -1,0 +1,1 @@
+// Faça um algoritmo que leia um conjunto de 15 valores, um de cada vez, acompanhados de um código 1 ou 2. O valor representa o número de cobaias utilizadas em uma das 15 experiências feitas e os códigos 1 e 2 reperesentam respectivamente coelhos e ratos. Mostre no final, o total de cobaias utilizadas, o total de coelhos, total de ratos, e o percentual de coelhos e ratos.
