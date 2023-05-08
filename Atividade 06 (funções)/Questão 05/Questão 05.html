@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    <script>
+
+        // Crie uma função que calcule a raiz quadrada de um número.
+
+        var valor = Number(window.prompt("CÁLCULO DE RAÍZ QUADRADA \nInforme o número para que sua raíz quadrada seja calculada."))
+
+        function raiz(num) {
+            
+            var resultado = Math.sqrt(num);
+
+            return resultado.toFixed(2);
+            
+        }
+
+        alert("A raiz quadrada de " + valor + " é igual a: " + raiz(valor))
+
+    </script>
+</body>
+</html>

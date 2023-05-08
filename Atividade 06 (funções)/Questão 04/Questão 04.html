@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    
+    <script>
+        var fahrenheit = Number(window.prompt("CONVERSOR - FAHRENHEIT PARA CELSIUS\nInforme uma temperatura em Fahrenheit para que seja convertida para Celsius: "));
+    
+        function Conversor(fahrenheit) {
+
+            var celsius = (fahrenheit - 32) * 5/9;
+
+        return celsius;
+        }
+    
+        var temperatura = Conversor(fahrenheit);
+    
+        alert(`${fahrenheit}°F = ${temperatura.toFixed(2)}°C`);
+
+    </script>
+    
+</body>
+</html>

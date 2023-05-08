@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+
+        // Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos através de uma função. Seu script também deve fornecer a média dos três números, através de uma segunda função. Exiba o resultado dos valores calculados.
+
+        alert("SOMA E MÉDIA DE 3 NÚMEROS")
+
+        var num1 = Number(window.prompt("Informe o 1º número: "))
+        var num2 = Number(window.prompt("Informe o 2º número: "))
+        var num3 = Number(window.prompt("Informe o 3º número: "))
+
+        function Soma(num1, num2, num3) {
+
+            return num1 + num2 + num3;
+            
+        }
+
+        function Média(num1, num2, num3) {
+
+            return num1 + num2 + num3 / 3;
+            
+        }
+
+        soma = Soma(num1, num2, num3);
+        media = Média(num1, num2, num3);
+
+        alert(`A soma dos 3 números é igual a: ${soma} \nA média dos 3 números é igual a: ${media.toFixed(2)} `)
+
+    </script>
+</body>
+</html>
