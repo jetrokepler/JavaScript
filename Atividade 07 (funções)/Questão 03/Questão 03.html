@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <script>
+
+        // 3 - Escreva uma função que retorne a área de um triângulo, a partir de valores de base e altura fornecidos.
+
+        function AreaTriangulo(b, h) {
+
+            area = b * h / 2
+
+            return area
+            
+        }
+
+        var base = Number(window.prompt("CÁLCULO DA ÁREA DO TRIÂNGULO \nInforme a medida da base do triângulo: "))
+        var altura = Number(window.prompt("Informe a medida da altura do triângulo: "))
+
+        window.prompt(`A área do triângulo é igual a: ${AreaTriangulo(base, altura)}`)
+
+    </script>
+</body>
+</html>
