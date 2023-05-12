@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+
+        // 1 - Crie um script que pergunte 3 números ao usuário, coloque em um array, depois exiba tal Array de modo contrário ao informado.
+        // Ou seja, se digitou 1,2,3 vai aparecer 3,2,1.
+
+        num1 = Number(window.prompt("ORDEM REVERSA \nInforme o 1º número: "))
+        num2 = Number(window.prompt("Informe o 2º número: "))
+        num3 = Number(window.prompt("Informe o 3º e último número"))
+
+        var listaNumeros = [num1, num2, num3];
+
+        numeros = listaNumeros.slice().reverse();
+
+        alert(`A ordem original foi: ${listaNumeros} \nA ordem reversa foi: ${numeros}`)
+
+    </script>
+</body>
+</html>
