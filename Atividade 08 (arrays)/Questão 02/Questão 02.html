@@ -11,20 +11,30 @@
 
         // 2 - Criar um vetor A com 10 elementos inteiros. Implementar um programa que defina e escreva a quantidade de elementos armazenados neste vetor que são pares.
 
-        for (i = 0; i < a.length; i++) {
-            
-            var num = Number(window.prompt(`Informe o ${i + 1}º número:`))
+        var numeros = [];
+        var numerosPares = [];
 
-            valores.push(valor);
+        for (i = 0; i < 10; i++) {
+            
+            var num = Number(window.prompt(`QUANTIDADE DE ELEMENTOS PARES NO VETOR \nInforme o ${i + 1}º número:`))
+
+            numeros.push(num);
 
         }
 
-        valores.forEach(element => {
+        numeros.forEach(function(i) {
 
-            
+            if (i % 2 == 0) {
+                
+                numerosPares.push(i);
+
+            }
             
         });
 
+        quantidadePares = numerosPares.length;
+
+        alert(`A quantidade de números pares na lista é: ${quantidadePares}`)
 
     </script>
 </body>

@@ -11,6 +11,27 @@
 
         // 3 - Criar um vetor A com 10 elementos inteiros. Implementar um programa que defina e escreva a soma de todos os elementos armazenados neste vetor.
 
+        var numeros = [];
+        var numerosPares = [];
+
+        for (i = 0; i < 10; i++) {
+            
+            var num = parseInt(window.prompt(`SOMA DOS DADOS DO VETOR \nInforme o ${i + 1}º número inteiro:`))
+
+            numeros.push(num);
+
+        }
+
+        var result = 0;
+
+        numeros.forEach(function(i) {
+
+            result += i;
+            
+        });
+
+        alert(`O resultado é: ${result}`)
+
     </script>
 </body>
 </html>

@@ -11,8 +11,47 @@
 
         // 4 - Criar um vetor A com 10 elementos. Escrever um programa que calcule e escreva:
         // A soma de elementos armazenados neste vetor que são inferiores a 15;
-        // A quantidade de elementos armazenados novetor que são iguais a 15;
+        // A quantidade de elementos armazenados no vetor que são iguais a 15;
         // A média dos elementos armazenados no vetor que são superiores a 15.
+
+        numeros = [];
+
+        for (let i = 1; i < 11; i++) {
+            
+            num = Number(window.prompt(`CÁLCULOS Nos VETOR \nInforme o ${i}º número: `))
+            numeros.push(num);
+
+        }
+
+        var somaMenores = 0;
+        var numeroIguais = 0;
+        var somaMaiores = 0;
+        var numeroMaiores = 0;
+
+        numeros.forEach(function(i) {
+
+            if (i < 15) {
+
+                somaMenores += i;
+                
+            } else if (i == 15) {
+
+                numeroIguais += 1;
+                
+            } else {
+
+                somaMaiores += i;
+                numeroMaiores ++;
+
+            }
+
+        })
+
+        var mediaMaiores = somaMaiores / numeroMaiores;
+
+        alert(`A soma dos números que são menores que 15 é igual a: ${somaMenores}`)
+        alert(`A quantidade de números iguais a 15 é igual a: ${numeroIguais}`)
+        alert(`A média dos elementos que são superiores a 15 é igual a: ${mediaMaiores}`)
 
     </script>
 </body>

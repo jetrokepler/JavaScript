@@ -11,6 +11,20 @@
 
         // 5 - Escreva um algoritmo em JavaScript que receba um vetor de números como entrada e retorne o valor máximo presente no vetor.
 
+        numeros = [];
+
+        for (i = 1; i < 11; i++) {
+
+            num = Number(window.prompt(`VALOR MÁXIMO NA LISTA \nInforme o ${i}º valor: `))
+
+            numeros.push(num);
+            
+        }
+
+        var maiorNumero = Math.max(...numeros)
+
+        alert(`O resultado é: ${maiorNumero}`)
+
     </script>
 </body>
 </html>
