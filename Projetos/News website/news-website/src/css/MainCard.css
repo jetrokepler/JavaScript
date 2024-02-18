@@ -1,0 +1,70 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    height: 462px;
+    width: 357.3px;
+    border-radius: 24px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.6s;
+}
+.Card:hover {
+    border: 1px solid black;
+    background-color: rgb(255, 189, 107);
+}
+.Card img {
+    border-radius: 23px 23px 0px 0px;
+    width: 357.3px;
+    height: 240px;
+    object-fit: cover;
+}
+.Card div {
+    flex-wrap: wrap;
+    padding: 14px 24px;
+    height: 183px;
+    border-radius: 24px;
+}
+.Card-button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: inherit;
+    border: 1px solid rgb(133, 133, 133);
+    padding: 5px 12px;
+    border-radius: 24px;
+    font-size: 12px;
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.6s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.Card:hover .Card-button {
+    border: 1px solid black;
+    background-color: rgb(255, 189, 107);
+}
+  
+.Card-button:hover {
+    background-color: rgb(255, 176, 79);
+}
+.Card-title {
+    --max-lines: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    margin: 8px 0px;
+    line-height: 1.1em;
+}
+.Card-description {
+    --max-lines: 3;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 10px 0px;
+} 

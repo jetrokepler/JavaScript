@@ -1,0 +1,31 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  overflow-x: hidden;
+}
+Main{
+  display: flex;
+  margin-top: 148px;
+}
+.News-container-1{
+  display: flex;
+  padding: 32px;
+  gap: 28px;
+  left: 0;
+}
+.News-container-2{
+  position: fixed;
+  right: 0;
+  width: 400px;
+  height: 526px;
+  background-color: rgba(0, 0, 0, 0.26);
+}
